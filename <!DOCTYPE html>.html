@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio do Aluno</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+  }
+
+  header {
+    background: #1e40af;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  section {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    background: #3b82f6;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+
+  footer {
+    background: #020617;
+    text-align: center;
+    padding: 15px;
+  }
+
+  /* RESPONSIVO */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+  }
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Meu Portfólio</h1>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section id="sobre">
+  <h2>Sobre mim</h2>
+  <p>Olá! Meu nome é Kauê. Estou aprendendo programação</p>
+</section>
+
+<section id="projetos">
+  <h2>Meus Projetos</h2>
+
+<div class="card">
+  <h3>Projeto 1</h3>
+  <p>Meu primeiro site no GitHub</p>
+
+  <a href="https://google.com" target="_blank">
+    <img src="2cursejalogo.png" width="200">
+  </a>
+
+</div>
+
+<div class="card">
+  <h3>Projeto 2</h3>
+  <p>Em desenvolvimento...</p>
+  <img src="https://via.placeholder.com/200" alt="Projeto 2">
+</div>
+
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <button class="btn" onclick="mensagem()">Falar comigo</button>
+</section>
+
+<footer>
+  © 2026 - Meu Portfólio
+</footer>
+
+<script>
+function mensagem() {
+  alert("Obrigado por visitar meu site!");
+}
+</script>
+
+</body>
+</html>
